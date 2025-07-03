@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@Mapping("/customer")
+@RequestMapping("/customer")
 public class CustomerController {
     //TODO найти бесплатный сервис для подключения https и разграничить доступ к запросам по ролям
     private final CustomerService customerService;
