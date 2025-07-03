@@ -98,4 +98,5 @@ public class CustomerController {
 
 
     }
-}   public static class UpdateCustomerRequest extends CustomerController.CreateCustomerRequest{}
+    public static class UpdateCustomerRequest extends CreateCustomerRequest{}
+}
