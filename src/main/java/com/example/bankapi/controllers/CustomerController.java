@@ -24,7 +24,7 @@ public class CustomerController {
                 req.getAddress(), req.getPhone());
         return ResponseEntity.ok(customer);
     }
-    GetMapping("/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Customer> getCustomer(@PathVariable UUID id){
         Customer customer = customerService.getCustomer(id);
         return customer!= null ? ResponseEntity.ok(customer) : ResponseEntity.notFound().build();
